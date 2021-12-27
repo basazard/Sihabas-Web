@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form name="add_kelas" action="add_kelas.php" method="POST">
+            <br><label> ID Kelas : </label>
+            <input type="text" name="id_kelas" value="1234567890" />
+            <br><label> Nama Kelas : </label>
+            <input type="text" name="nama_kelas" value="X AK 1" />
+            <br><label> Tahun Ajaran : </label>
+            <input type="text" name="tahun_ajaran" value="2019/2020" />
+            <br><input type="submit" value="Save" name="submit" />
+        </form>
+        
+        <form name="update_kelas" action="update_kelas.php" method="POST">
+            <br><label> ID Kelas : </label>
+            <input type="text" name="id_kelas" value="1234567890" />
+            <br><label> Nama Kelas : </label>
+            <input type="text" name="nama_kelas" value="X AK 1" />
+            <br><label> Tahun Ajaran : </label>
+            <input type="text" name="tahun_ajaran" value="2019/2020" />
+            <br><input type="submit" value="Update" name="submit" />
+        </form>
+        
+        <form name="delete_kelas" action="delete_kelas.php" method="POST">
+            <br><label> ID Kelas : </label>
+            <input type="text" name="id_kelas" value="1234567890" />
+            <br><input type="submit" value="Delete" name="submit" />
+        </form>
+        
+        <form name="view_kelas" action="view_kelas.php" method="POST">
+            <br><input type="submit" value="View" name="submit" />
+        </form>
+    </body>
+</html>

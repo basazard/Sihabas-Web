@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> 
+            <form name="add" action="add_guru.php" method="POST">
+                <br><label> ID Guru : </label>
+                <input type="text" name="id_guru" value="kode" />
+                <br><label> Nama Guru : </label>
+                <input type="text" name="nama_guru" value="nama" />
+                <br><label> Password  : </label>
+                <input type="password" name="password" value="pass" />
+                <br><input type="submit" value="Save" name="btn_save" />
+            </form>
+            <form name="update" action="update_guru.php" method="POST">
+                <br><label> ID Guru : </label>
+                <input type="text" name="id_guru" value="kode" />
+                <br><label> Nama Guru : </label>
+                <input type="text" name="nama_guru" value="nama" />
+                <br><label> Password  : </label>
+                <input type="password" name="password" value="pass" />
+                <br><input type="submit" value="Update" name="btn_update" />
+            </form>
+            <form name="delete" action="delete_guru.php" method="POST">
+                <br><label> ID Guru : </label>
+                <input type="text" name="id_guru" value="kode" />
+                <br><input type="submit" value="Delete" name="btn_delete" />
+            </form>
+            <form name="view" action="view_guru.php" method="POST">
+                
+                <br><input type="submit" value="View" name="btn_view" />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Administrasi Peserta Didik</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <br>
+        <form name="add_murid" action="add_murid.php" method="POST">
+            <label> ID Siswa : </label>
+            <input title="hello" type="text" name="id_murid" value="123456789" />
+            <br><label> Nama Siswa : </label>
+            <input type="text" name="nama_murid" value="nama murid" />
+            <br><label> Gender : </label>
+            <input type="radio" name="gender" value="P" checked /> Perempuan 
+            <input type="radio" name="gender" value="L" /> Laki-Laki 
+            <br>
+            <input type="submit" value="Save" name="submit" /> 
+        </form>
+        
+        <br>
+        
+        <form name="update_murid" action="update_murid.php" method="POST">
+            <label> ID Siswa : </label>
+            <input type="text" name="id_murid" value="123456789" />
+            <br><label> Nama Siswa : </label>
+            <input type="text" name="nama_murid" value="paijo" />
+            <br><label> Gender : </label>
+            <input type="radio" name="gender" value="P" checked /> Perempuan 
+            <input type="radio" name="gender" value="L" /> Laki-Laki 
+            <br>
+            <input type="submit" value="Update" name="submit" /> 
+        </form>
+        
+        <br>
+        
+        <form name="delete_murid" action="delete_murid.php" method="POST">
+            <label> ID Siswa : </label>
+            <input type="text" name="id_murid" value="123456789" />
+            <br>
+            <input type="submit" value="Delete" name="submit" /> 
+        </form>
+        
+        <br>
+        
+        <form name="view_murid" action="view_murid.php" method="POST">
+            <input type="submit" value="View" name="submit" /> 
+        </form>
+        
+    </body>
+</html>
